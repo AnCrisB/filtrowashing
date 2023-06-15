@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Campus Car Washing Center</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+<nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#pag-principal"><i class="bi bi-car-front"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#header-clientes" class="nav-link active" aria-current="page">Clientes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#header-gestionSrv">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#header-compra-srv">Compra</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#header-fidelizacion">Fidelización</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Carrusel -->
+
+<div id="pag-principal" class="container">
+    <div class="row">
+        <div id="colCarousel" class="col-12">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1605164599901-f8a1464a2c87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhciUyMHdhc2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" class="d-block w-100" alt="...">
+                        <h5>Lavado</h5>
+                        <p>Trabajamos con personal calificado y brindamos un servicio de spa para consentir y cuidar su auto garantizando el cuidado de su vehículo.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661443402703-a7e48f84ceec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhciUyMHdhc2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" class="d-block w-100" alt="...">
+                        <h5>Limpieza motor</h5>
+                        <p>La limpieza del motor aporta al cuidado de esta pieza, evitando fallas posteriores que incidan en reparaciones de altos costos. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1605164599894-ca98960d41b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhciUyMHdhc2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" class="d-block w-100" alt="...">
+                        <h5>Cojinería</h5>
+                        <p>Nuestros productos y el alto grado de capacitación de nuestro personal, nos permiten garantizarle un servicio que renovará el color original de su tapicería, retirando manchas, suciedad acumulada sin generar maltratos en las sillas.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1550564956-8f914edc0477?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="...">
+                        <h5>Polichado</h5>
+                        <p>Servicio completo del vehículo en su exterior e interior, incluyendo la Hidratación de tableros y carpetas.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+    <!-- CLIENTES -->
+    
+<section class="container border border-4">
+    <header id="header-clientes" class="text-center">
+        <h1>Clientes</h1>
+    </header>
+
+    <div class=" text-center">
+        <div class="row" style="padding: 3px;">
+            <!-- formulario clientes-->
+            <div class="col-sm-12 col-md-4 border border-4" style="padding: 3px;">
+                    <form id="form-clientes">
+
+                        <div class="mb-3">
+                            <label for="nit" class="form-label">NIT</label>
+                            <input type="number" name="nit" class="form-control" id="nit" name="nit">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombres" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombres" name="nombres">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="number" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="placa" class="form-label">Placa Auto</label>
+                            <input type="text" class="form-control" id="placa" name="plac">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo" class="form-label">Tipo de auto</label>
+                            <div class="mb-3">
+                                <select class="form-select" id="tematica-vj">
+                                    <option value="type"></option>
+                                    <option value="Automovil">Automóvil</option>
+                                    <option value="Camioneta">Camioneta</option>
+                                    <option value="Autobus">Autobús</option>
+                                    <option value="Camion">Camión de Carga</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- botones -->
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                <br>
+        
+            </div>
+
+            <!-- table -->
+            <div id="table-clientes" class="col-sm-12 col-md-8  border border-4 table-responsive">
+                <!-- input buscar -->
+                
+                <table class="table table-hover table-success table-striped" style="margin:2px">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NIT</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Placa Auto</th>
+                            <th scope="col">Tipo Auto</th>
+                        </tr>
+                    </thead>
+                    <div>
+                        <input class="container" type="text" id="search-input" style="padding: 9px; margin-top: 3px;"
+                            placeholder="Buscar por ID, Nombres o Apellidos">
+                    </div>
+                    <!-- btn buscar -->
+                    <button type="submit" id="btnBuscar" class="btn btn-info" data-action="buscar">Buscar</button>
+                    <tbody id="tbody-clientes">
+                        <!-- agregados dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SERVICIOS -->
+
+<section class="container border border-4" style="margin-top: 10px;">
+    <header id="header-gestionSRV" class="text-center">
+        <h1>Gestión de Servicios</h1>
+    </header>
+
+
+    <div class="text-center">
+        <div class="row" style="padding: 3px;">
+            <!-- formulario gestion de servicios -->
+            <div class="col-sm-12 col-md-4 border border-4" >
+                <form id="form-gestion-srv" >
+
+                    <div class="mb-3" >
+                        <label for="nombre-srv" class="form-label" style="margin: 3px;">Nombre del Servicio</label>
+                        <input type="text" name="nit" class="form-control" id="nombre-srv" name="nit">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion-srv" class="form-label">Descripción</label>
+                        
+                        <p>Somos una propuesta ecológica e innovadora de lavado de autos, nuestro principal objetivo es desarrollar una operación de calidad con la mayor comodidad. Encontrarás innovación, calidad y confort en el lavado ecológico de su auto en todo el territorio nacional. </p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="valor-servicio-srv" class="form-label">Valor servicio</label>
+                        <input type="number" class="form-control" id="valor-servicio-srv" name="value">
+                    </div>
+                    <div class="mb-3">
+                        <label for="puntos-srv" class="form-label">Puntos para fidelización</label>
+                        <input type="number" class="form-control" id="puntos-srv" name="points">
+                    </div>
+
+                    <!-- botones -->
+                    <button type="submit" class="btn btn-primary" style="margin: 5px">Agregar</button>
+
+                </form>
+            </div>
+
+            <!-- table gestión video juegos-->
+            <div id="table-gestion-srv" class="col-sm-12 col-md-8  border border-4 table-responsive">
+
+                <table class="table table-hover table-success table-striped margin:2px">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre Servicio</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Valor Servicio</th>
+                            <th scope="col">Puntos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-gestion-srv">
+                        <!-- agregados dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="container border border-4">
+    <header id="header-compra-srv" class="text-center">
+        <h1>Compra del Servicio</h1>
+    </header>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col border border-4">
+
+                <form id="form-compra-srv">
+                    <div>
+                        <select class="form-select" id="nombreCliente">
+                            <option value="">Clientes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select" id="nombreServicio">
+                            <option value="">CarWashing</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="valorSrv" class="form-label">Valor del Servicio</label>
+                        <input type="text" class="form-control" id="valorSrv" name="valor">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Comprar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+    <!-- FIDELIZACIÒN -->
+
+<section class="container border border-4" style="margin-block-end: 10px;">
+    <header id="header-fidelizacion" class="text-center">
+        <h1>Fidelización</h1>
+    </header>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col border border-4 table-responsive">
+                <!-- table gestión video juegos-->
+                <div id="table-fidelizacion" class="border border-4 table-responsive">
+                    <table class="table table-hover table-success table-striped margin:2px">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-fidelizacion">
+                            <!-- agregados dinamicamente -->
+                        </tbody><div class="mb-3">
+                            <label for="tematica-srv" class="form-label">Tipo Servicio</label>
+                            <input type="text" class="form-control" id="tematica-srv" name="nombres">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" id="tematica-vj">
+                                <option value="">Tipo de servicio</option>
+                                <option value="Lavado">Lavado</option>
+                                <option value="Cera">Cera</option>
+                                <option value="Tapizado">Tapizado</option>
+                                <option value="Polichado">Polichado</option>
+                                <option value="Limpieza">Limpieza motor</option>
+                            </select>
+                        </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="card-group">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1565689876697-e467b6c54da2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwd2FzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">CarWashing Center</h5>
+            <p class="card-text"></p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#header-clientes" class="card-link">Gestión Clientes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1632823471799-c3812077da2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwZGV0YWlsaW5nfGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">CarWashing Center</h5>
+            <p class="card-text"></p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#header-gestionSrv" class="card-link">Gestión Servicios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1605437241278-c1806d14a4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwZGV0YWlsaW5nfGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">CarWashing Center</h5>
+            <p class="card-text"></p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#header-compra-srv" class="card-link">Compra del Servicio</a></li>
+
+            </ul>
+        </div>
+    </div>           
+</div>
+
+    <!-- boton para deslizar hacia arriba -->
+<div class="go-top-container">
+    <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</div>
+
+    <!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <!-- javascript -->
+<script src="Script.js"></script>
+
+</body>
+
+</html>

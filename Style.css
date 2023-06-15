@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.carousel-inner {
+    background-color: rgba(184, 184, 184, 0.274); 
+    padding: 3px;
+} 
+
+h5 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.border{
+    background-color: rgb(239, 247, 247);
+}
+
+.table{
+    margin: 2px;
+}
+
+#table-clientes, #table-gestion-srv{
+    background-color:rgb(200, 223, 223) ;
+}
+
+section{
+    padding-top: 10px;
+}
+
+#pag-principal,#colCarousel{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*GoTop */
+.go-top-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background-color: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show {
+    z-index: 10; /*Mostrar el element*/
+}
+
+.show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+/*Animación*/
+@keyframes popup {
+    0% { 
+        width: 0rem;
+        height: 0rem;
+    }
+    80% { 
+        width: 8rem;
+        height: 8rem;
+    }
+    100% { 
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
